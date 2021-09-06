@@ -83,7 +83,7 @@ function authToggle() {
             timer = parseInt(res.timerCount);
         })
         timerSnack.classList.add('show');
-        document.getElementById('timerMsg').innerHTML ="<i class='fa fa-clock'>    "+ clock.toString() +" / 90 Mins Left </i>";
+        document.getElementById('timerMsg').innerHTML ="<i class='fa fa-clock'>    "+ clock.toString() +" / 90 Mins </i>";
     }
 }
 
