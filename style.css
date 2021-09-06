@@ -1,3 +1,11 @@
+#timer{
+  background-color:#419D78;
+  color:#EFD0CA;
+  font-size:20px;
+  text-align:center;
+}
+
+
 #snackbar{
     background: rgb(241, 21, 21);
     color: white;
@@ -30,6 +38,21 @@
   transform: translateY(0);
 }
 
+#timerSnack{
+  background: #419D78;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  transform: translateY(200px);
+  transition: all 300ms;
+}
+
+#timerSnack.show{
+  transform: translateY(0);
+}
 
 #main{
     display: none;
@@ -91,4 +114,3 @@
   margin-top: 50px;
   padding-top: 14px;
 }
-
