@@ -1,6 +1,8 @@
 var interval;
 var timer = 0;
+var clock = 0;
 const snackbar = document.getElementById("snackbar");
+const timerSnack = document.getElementById("timerSnack");
 const emailSnack = document.getElementById("emailSnack");
 const elem = document.getElementById("main");
 const login = document.getElementById("login");
@@ -18,20 +20,33 @@ var mech_sets = ['https://docs.google.com/forms/d/e/1FAIpQLScA2KzKyBCJmVx_YYkjQu
 var etc_sets = ['https://docs.google.com/forms/d/e/1FAIpQLSeCsbYvV1FesFjxsoM5j0I5YGrv5Ee47BfpmQd2R4W6OsG9FQ/viewform?usp=sf_link',
                 'https://docs.google.com/forms/d/e/1FAIpQLSfKIUbAevErLFFd2DiRqMQaAlWyFXHtDZmvQKmfphPk24LjDA/viewform?usp=sf_link',
                 'https://docs.google.com/forms/d/e/1FAIpQLSdnQp75R3v5k4bhQYhEeHUcEtP129Dzm3DTjEW8hHB9s8wcCA/viewform?usp=sf_link'];
-                //'https://forms.gle/vsMGHufm8oEJJAAq9'];
 
 var comp_sets = ['https://docs.google.com/forms/d/e/1FAIpQLSfP50zKLAu5y_CL1K2-f7iLU_C0KN7VlIJj2oD4-BX2-1KGtQ/viewform?usp=sf_link',
-                 'https://docs.google.com/forms/d/e/1FAIpQLSeH9NmTcPBQQAPVqckq08e4KpGeQnDO8ojh5EpC77CXALZtPQ/viewform?usp=sf_link'];
+                 'https://docs.google.com/forms/d/e/1FAIpQLSeH9NmTcPBQQAPVqckq08e4KpGeQnDO8ojh5EpC77CXALZtPQ/viewform?usp=sf_link',
+                 'https://docs.google.com/forms/d/e/1FAIpQLSfd7w_hE5Jxi13_OxY6afjzfJZJWOG5mcIqKyvyLj7R9KmEog/viewform?usp=sf_link'];
 
 interval = setInterval(checkFocus, 100);
 
+setInterval(handleTimer, 60000);
+
 setInterval(updateDB, 600000);
+
+function handleTimer(){
+    clock += 1;
+    console.log(clock);
+    if(clock < 90){
+        document.getElementById('timerMsg').innerHTML ="<i class='fa fa-clock'>  🕑  "+ clock.toString() +" / 90 Mins </i>";
+    } else {
+        document.getElementById('timerMsg').innerHTML ="<i class='fa fa-exclamation-triangle'>     Time Up! Submit The Test Now. Extended time is being recorded </i>";
+    }
+    
+}
+
 
 function checkFocus() {
     if (!document.hasFocus()) {
         timer += 0.1;
         handleSnack();
-        // console.log("out of focus");
     }
 }
 
@@ -68,6 +83,8 @@ function authToggle() {
             count_paper = res.paperCount;
             timer = parseInt(res.timerCount);
         })
+        timerSnack.classList.add('show');
+        document.getElementById('timerMsg').innerHTML ="<i class='fa fa-clock'>    "+ clock.toString() +" / 90 Mins Left </i>";
     }
 }
 
