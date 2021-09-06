@@ -17,7 +17,8 @@ var mech_sets = ['https://forms.gle/ZTPvgHdM5CXrrzbA6',
 
 var etc_sets = ['https://forms.gle/tFeTsh8g2E6mk63V9',
                 'https://forms.gle/ERzWkYS4ptN4tBPQ8',
-                'https://forms.gle/vsMGHufm8oEJJAAq9'];
+                'https://docs.google.com/forms/d/e/1FAIpQLSdnQp75R3v5k4bhQYhEeHUcEtP129Dzm3DTjEW8hHB9s8wcCA/viewform?usp=sf_link'];
+                //'https://forms.gle/vsMGHufm8oEJJAAq9'];
 
 var comp_sets = ['https://forms.gle/SRfE6NoGFErAUNMe8',
                  'https://forms.gle/4KeTitce5Q6LfkNYA'];
