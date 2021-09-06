@@ -147,7 +147,7 @@ function getETC(){
         count_paper = Math.floor(Math.random() * etc_sets.length);
     }
     document.getElementById('main').innerHTML =
-        "<iframe id='FORM' title='g-Form' src='https://forms.gle/vsMGHufm8oEJJAAq9' width='100%' height='943' frameborder='0' marginheight='0' marginwidth='0'> Loading… </iframe>"
+        "<iframe id='FORM' title='g-Form' src='" + etc_sets[count_paper] + "' height='943' frameborder='0' marginheight='0' marginwidth='0'> Loading… </iframe>"
     // document.getElementById('FORM').src = etc_sets[count_paper];
 }
 
