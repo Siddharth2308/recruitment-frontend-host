@@ -14,8 +14,7 @@ var uid;
 var api_url = 'https://recruitment-app-rtr.herokuapp.com/posts/';
 
 var mech_sets = ['https://docs.google.com/forms/d/e/1FAIpQLScA2KzKyBCJmVx_YYkjQuNrh5xW0KXhvm7WPYDCVPgWJNDO5A/viewform?usp=sf_link',
-                 'https://docs.google.com/forms/d/e/1FAIpQLSek8j8N8WvYqGGLexyT8qUuIbP73HMs1ZRZykcH6-Nlzw7svA/viewform?usp=sf_link',
-                 'hhttps://docs.google.com/forms/d/e/1FAIpQLScY7zTi330wEY0Harniw_sB32B1RGEyKBVBAoAetrN5AKngqQ/viewform?usp=sf_link'];
+                 'https://docs.google.com/forms/d/e/1FAIpQLSek8j8N8WvYqGGLexyT8qUuIbP73HMs1ZRZykcH6-Nlzw7svA/viewform?usp=sf_link'];
 
 var etc_sets = ['https://docs.google.com/forms/d/e/1FAIpQLSeCsbYvV1FesFjxsoM5j0I5YGrv5Ee47BfpmQd2R4W6OsG9FQ/viewform?usp=sf_link',
                 'https://docs.google.com/forms/d/e/1FAIpQLSfKIUbAevErLFFd2DiRqMQaAlWyFXHtDZmvQKmfphPk24LjDA/viewform?usp=sf_link',
