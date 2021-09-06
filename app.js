@@ -11,17 +11,17 @@ var count_paper = 0;
 var uid;
 var api_url = 'https://recruitment-app-rtr.herokuapp.com/posts/';
 
-var mech_sets = ['https://forms.gle/ZTPvgHdM5CXrrzbA6',
-                 'https://forms.gle/fPxvJ2gXCCFBhfPz8',
-                 'https://forms.gle/EkqJ1nmKdFT6V4MA6'];
+var mech_sets = ['https://docs.google.com/forms/d/e/1FAIpQLScA2KzKyBCJmVx_YYkjQuNrh5xW0KXhvm7WPYDCVPgWJNDO5A/viewform?usp=sf_link',
+                 'https://docs.google.com/forms/d/e/1FAIpQLSek8j8N8WvYqGGLexyT8qUuIbP73HMs1ZRZykcH6-Nlzw7svA/viewform?usp=sf_link',
+                 'hhttps://docs.google.com/forms/d/e/1FAIpQLScY7zTi330wEY0Harniw_sB32B1RGEyKBVBAoAetrN5AKngqQ/viewform?usp=sf_link'];
 
-var etc_sets = ['https://forms.gle/tFeTsh8g2E6mk63V9',
-                'https://forms.gle/ERzWkYS4ptN4tBPQ8',
+var etc_sets = ['https://docs.google.com/forms/d/e/1FAIpQLSeCsbYvV1FesFjxsoM5j0I5YGrv5Ee47BfpmQd2R4W6OsG9FQ/viewform?usp=sf_link',
+                'https://docs.google.com/forms/d/e/1FAIpQLSfKIUbAevErLFFd2DiRqMQaAlWyFXHtDZmvQKmfphPk24LjDA/viewform?usp=sf_link',
                 'https://docs.google.com/forms/d/e/1FAIpQLSdnQp75R3v5k4bhQYhEeHUcEtP129Dzm3DTjEW8hHB9s8wcCA/viewform?usp=sf_link'];
                 //'https://forms.gle/vsMGHufm8oEJJAAq9'];
 
-var comp_sets = ['https://forms.gle/SRfE6NoGFErAUNMe8',
-                 'https://forms.gle/4KeTitce5Q6LfkNYA'];
+var comp_sets = ['https://docs.google.com/forms/d/e/1FAIpQLSfP50zKLAu5y_CL1K2-f7iLU_C0KN7VlIJj2oD4-BX2-1KGtQ/viewform?usp=sf_link',
+                 'https://docs.google.com/forms/d/e/1FAIpQLSeH9NmTcPBQQAPVqckq08e4KpGeQnDO8ojh5EpC77CXALZtPQ/viewform?usp=sf_link'];
 
 interval = setInterval(checkFocus, 100);
 
